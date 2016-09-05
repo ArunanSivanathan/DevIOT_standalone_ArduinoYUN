@@ -23,22 +23,31 @@ The main purpose of this project was built to demonstrate, how an Arduino Yun ca
 In this tutorial IP address of the arduino was assumed as 192.168.0.6
 
 6. Download MQTT library in your PC and copy it to Arduino YUN OpenWRT platform using SCP command from your PC
-`git clone https://github.com/eclipse/paho.mqtt.python.git`
-`scp -r ./paho.mqtt.python/ root@192.168.0.6:~/`
-
+ ```
+git clone https://github.com/eclipse/paho.mqtt.python.git
+scp -r ./paho.mqtt.python/ root@192.168.0.6:~/
+ ```
 7. Replace the devIoT account in the app.py at line 42
 ` app = Gateway("Slider_test", "52.38.220.120:9000", "52.38.220.120:1883", "account@devIoT")`
 
 8. Copy app.py to OpenWRT platform from PC using following SCP command
-`scp -r ./gateway/*  root@192.168.0.6:~/`
+ ```
+scp -r ./gateway/*  root@192.168.0.6:~/
+ ```
 
 9. Log in to the Arduino YUN openwrt platform using ssh
-`ssh root@192.168.0.6`
+ ```
+ssh root@192.168.0.6
+ ```
 
 10. Install MQTT library in Arduino openwrt platform
-`cd ./paho.mqtt.python/`
-`python setup.py install`
-`cd ../`
+ ```
+cd ./paho.mqtt.python/
+python setup.py install
+cd ../
+ ```
 
 11. Execute the app.py script
-`python app.py`
+ ```
+python app.py
+ ```
