@@ -2,7 +2,7 @@
 Arduino Yun is one of the Arduino development board. It distinguishes itself from other Arduino family boards by its Wi-Fi and Ethernet connectivity. Similar to Arduino basic boards like Arduino Uno, Yun has an ATmega32u4 to control the I/O pins. It has an additional microcontroller(AR 9331) installed with OpenWRT linux operating system. However both of them can be communicated using Bridge Library.
 ![alt tag](https://www.arduino.cc/en/uploads/Guide/BridgeBlockDiag.png)
 
-The main purpose of this project was built to demonstrate, how an Arduino Yun can be connected with devIOT platform.
+The main purpose of this project is demonstrating, how to connect an Arduino Yun with devIOT platform as standalone without any host.
 
 ##How to setup?
 
